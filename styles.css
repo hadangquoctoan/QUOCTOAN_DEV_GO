@@ -500,6 +500,7 @@ section h2 {
     overflow: hidden;
     border: 1px solid var(--border-color);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
 
 .project-card:hover {
@@ -518,6 +519,10 @@ section h2 {
 
 .project-content {
     padding: 2rem;
+}
+
+.project-card.featured .project-content {
+    padding-top: 3rem;
 }
 
 .project-content h3 {
@@ -554,6 +559,29 @@ section h2 {
     color: var(--text-primary);
     border-color: var(--primary-color);
 }
+
+.project-card.featured {
+    background: var(--card-gradient);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    position: relative;
+}
+
+.project-card.featured:hover {
+    border-color: rgba(102, 126, 234, 0.4);
+}
+
+.project-status {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
 }
 
 .project-button {
